@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addEvent, updateDate } from "../../Redux/Slicers/events-slicer";
+import { addEvent, updateDate } from "../../redux/slicers/events-slicer";
 import AddEventbtn from "../AddEventBtn/AddEventBtn";
 import Datepicker from "../Datepicker/Datepicker";
 import EventForm from "../EventForm/EventForm";

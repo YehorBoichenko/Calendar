@@ -3,10 +3,7 @@ import Cell from "../Cell/Cell";
 import moment from "moment/moment";
 
 import { useSelector } from "react-redux";
-import {
-  getEventsFromStore,
-  getSelectedDate,
-} from "../../../Redux/Selectors/events-selectors";
+import { getEventsFromStore, getSelectedDate } from "../../../redux/selectors/events-selectors";
 import styles from "./Item.module.css";
 let clsNms = require("classnames");
 

@@ -4,8 +4,8 @@ import Item from "./Item/Item";
 import moment from "moment";
 import styles from "./Calendar.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { getSelectedDate } from "../../Redux/Selectors/events-selectors";
-import { updateDate } from "../../Redux/Slicers/events-slicer";
+import { getSelectedDate } from "../../redux/selectors/events-selectors";
+import { updateDate } from "../../redux/slicers/events-slicer";
 
 export default function Calendar() {
   const selectedDate = useSelector(getSelectedDate);

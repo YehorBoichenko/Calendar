@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import styles from "./Cell.module.css";
 import EventForm from "../../EventForm/EventForm";
-import { deleteEvent, editEvent } from "../../../Redux/Slicers/events-slicer";
+import { deleteEvent, editEvent } from "../../../redux/slicers/events-slicer";
 import moment from "moment/moment";
 
 const colors = [

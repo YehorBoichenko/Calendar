@@ -5,7 +5,7 @@ import DatePicker from "react-datepicker";
 import { nanoid } from "nanoid";
 import ReactDOM from "react-dom";
 import { useSelector } from "react-redux";
-import { getSelectedDate } from "../../Redux/Selectors/events-selectors";
+import { getSelectedDate } from "../../redux/selectors/events-selectors";
 import svg from "../../assets/icons.svg";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
