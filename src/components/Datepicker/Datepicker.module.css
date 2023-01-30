@@ -1,0 +1,84 @@
+.wrapper {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.month {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 250ms linear;
+}
+
+.btn:hover {
+    background-color: rgba(217, 217, 217, 0.201);
+}
+
+.monthText {
+    text-align: center;
+    min-width: 80px;
+    font-weight: 700;
+}
+
+.calendarBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    outline: 2px solid rgb(169, 169, 169);
+    padding: 2px;
+}
+
+.iconCalendar {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: currentColor;
+    transition: all 250ms linear;
+    pointer-events: none;
+}
+
+.datePicker {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+    font-size: 0px;
+    outline: none;
+    border: none;
+}
+
+.calendarBox:hover .iconCalendar {
+    fill: royalblue;
+}
+
+.iconArrow {
+    color: currentColor;
+    stroke: currentColor;
+}
+
+.btn:hover .iconArrow {
+    color: royalblue;
+    stroke: royalblue;
+}

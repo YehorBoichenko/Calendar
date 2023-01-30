@@ -1,0 +1,187 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity 500ms ease-out 0.2s, visibility 500ms ease-out;
+}
+
+.modal {
+    position: absolute;
+    background-color: var(--bg-color);
+    padding: 50px 10px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+
+.clsBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #000;
+    padding: 3px;
+    right: 8px;
+    top: 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: inherit;
+    transition: all 250ms linear;
+}
+
+.clsBtn:hover {
+    background-color: rgb(195, 69, 69);
+    color: #fff;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.label {
+    display: block;
+    position: relative;
+    font-size: 13px;
+    color: #ababab;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #ababab;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 10px;
+    color: #ababab;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputWrap {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+
+.input,
+.descr,
+.inputDate,
+.inputTime {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: inherit;
+    color: inherit;
+    outline: none;
+    color: var(--text-color);
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ababab;
+}
+
+.descr {
+    resize: none;
+    height: 50px;
+}
+
+.inputDate {
+    display: inline-block;
+}
+
+.inputTime {
+    display: inline-block;
+    width: 100px;
+}
+
+.btnwrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.submitBtn {
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #328989;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 250ms linear;
+}
+
+.submitBtn:hover {
+    color: #328989;
+    border: 1px solid #328989;
+    background-color: #fff;
+}
+
+.submitBtn:disabled {
+    filter: grayscale();
+}
+
+.submitBtn:invalid {
+    background-color: transparent;
+}
+
+.deleteBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px 10px;
+    background-color: #ed5e3d;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 250ms linear;
+}
+
+.deleteBtn:hover {
+    background-color: #fff;
+    color: #ed5e3d;
+    border: 1px solid #ed5e3d;
+}
+
+.icon {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.delete {
+    fill: currentColor;
+}
+
+.clock {
+    fill: currentColor;
+    position: absolute;
+    top: 36px;
+    right: 4px;
+}
+
+.labelTime:hover .clock {
+    fill: rgb(33, 34, 139);
+}
+
+.error {
+    color: #e9330b;
+}
